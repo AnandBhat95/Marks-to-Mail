@@ -50,7 +50,7 @@ def mail():
         msg.set_content('Marks for {} is {}'.format(sub,marks))
         
         s=smtplib.SMTP_SSL('smtp.gmail.com',465)
-        s.login('olduser95@gmail.com','pythonaat')
+        s.login('your_gmail','your_password')
         s.send_message(msg)
         s.quit()
 
